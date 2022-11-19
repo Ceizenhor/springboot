@@ -119,6 +119,12 @@
                 if (pid){
                     this.form.pid = pid
                 }
+                //请求图标的数据
+                this.request.get("/menu/icons", {
+                }).then(res => {
+                    this.options = res.data
+
+                })
             },
             handleEdit(row) {
                 // this.form = Object.assign({}.row)

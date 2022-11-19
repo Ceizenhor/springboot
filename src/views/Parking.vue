@@ -120,7 +120,7 @@
           this.total = res.data.total
         })
 
-        this.request.get("/user/role/ROLE_MASTER").then(res => {
+        this.request.get("/user/roleAll").then(res => {
           this.owners = res.data
         })
       },

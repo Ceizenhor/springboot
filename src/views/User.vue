@@ -40,6 +40,7 @@
                     <el-tag type="warning" v-if="scope.row.role === 'ROLE_STAFF'">物业人员</el-tag>
                     <el-tag type="warning" v-if="scope.row.role === 'ROLE_BUSINESS'">商家</el-tag>
                     <el-tag type="success" v-if="scope.row.role === 'ROLE_MASTER'">户主</el-tag>
+                    <el-tag type="warning" v-if="scope.row.role === 'ROLE_METER'">抄表员</el-tag>
                 </template>
             </el-table-column>
             <el-table-column prop="nickname" label="昵称" ></el-table-column>
